@@ -1,0 +1,47 @@
+/* :root {
+    --prime-col: #031B1B;
+    --second-col: #8EE503;
+    --third-col: #DFE3E3;
+} */
+
+:root {
+    --prime-col: #0B0D11;
+    --second-col: #3682DA;
+    --third-col: #FFFFFF;
+    --shade-col: #DFE3E3;
+}
+
+/* :root {
+    --prime-col: white;
+    --second-col: #3682DA;
+    --third-col: #0B0D11;
+    --shade-col: #282828;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto';
+    background-color: var(--prime-col);
+}
+
+section {
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+    padding-top: 10vmin;
+    background-color: var(--prime-col);
+    color: var(--third-col);
+    border-bottom: 2px solid var(--third-col);
+}
+
