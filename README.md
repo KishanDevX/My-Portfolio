@@ -18,7 +18,6 @@ Welcome to my personal developer portfolio — built using **React** and **Vite*
 - Responsive design
 - Project showcase
 - About Me & Contact sections
-- Smooth animations (optional if added)
 - Clean and modern UI
 
 ---
