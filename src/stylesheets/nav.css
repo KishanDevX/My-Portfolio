@@ -5,7 +5,7 @@ header {
   align-items: center;
   position: fixed;
   width: 100vw;
-  height: 60px; /* fixed height */
+  height: 60px;
   padding: 0 1.5rem;
   z-index: 10;
 }
@@ -18,7 +18,6 @@ header {
 
 nav {
   font-size: 2rem;
-  /* margin-right: 1rem; */
   display: flex;
   align-items: center;
 }
@@ -57,6 +56,23 @@ nav ul li a {
   justify-content: center;
 }
 
+#hamIcon .ham-icon {
+  position: absolute;
+  font-size: 2.5rem;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#hamIcon .hidden {
+  opacity: 0;
+  transform: rotate(-90deg) scale(-0.5);
+  pointer-events: none;
+}
+
+#hamIcon .visible {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
 @media (max-width:750px) {
   #navOptions {
     display: none;
@@ -92,6 +108,49 @@ nav ul li a {
 
   #hamIcon {
     font-size: 2.5rem;
-    /* margin: 0 1rem 0 0; */
   }
 }
+
+
+/* drop menu design */
+#dropMenu {
+  background-color: var(--second-col);
+  position: absolute;
+  border-radius: 1vh;
+  right: 2rem;
+  top: 40px;
+  overflow: hidden;
+}
+
+#dropMenu ul {
+  list-style: none;
+}
+
+#dropMenu ul li {
+  font-size: 1.5em;
+  width: 100%;
+  border-bottom: 2px solid var(--prime-col);
+}
+
+#dropMenu ul li:last-of-type {
+  border: none;
+}
+
+#dropMenu ul li a {
+  color: none;
+  color: var(--prime-col);
+  display: block;
+  padding: 1.3vh 3.5vh 1.3vh 2.5vh;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+#dropMenu ul li a:active {
+  background-color: var(--shade-col);
+}
+
+#dropMenu ul li a i {
+  margin-right: 1rem;
+}
+

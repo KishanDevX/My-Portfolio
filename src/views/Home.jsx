@@ -2,7 +2,7 @@ import React from 'react'
 
 import '../stylesheets/nav.css'
 
-import Header from '../components/Header'
+import Header from '../components/common/Header'
 
 import FrontSec from './sections/FrontSec'
 import AboutSec from './sections/AboutSec'

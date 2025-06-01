@@ -5,24 +5,25 @@
     --third-col: #DFE3E3;
 } */
 
-:root {
+/* :root {
     --prime-col: #0B0D11;
     --second-col: #7450E9;
     --third-col: #FFFFFF;
     --shade-col: #DFE3E3;
-}
+} */
 
-/* :root {
+:root {
     --prime-col: white;
     --second-col: #7450E9;
     --third-col: #0B0D11;
     --shade-col: #282828;
-} */
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 html {
