@@ -7,19 +7,20 @@
 
 /* photo based design */
 #pic {
-    height: 60vmin;
-    width: 60vmin;
+    height: 30vh;
+    width: 30vh;
 }
 
-#pic img {
+#codeAnim {
     height: 100%;
     width: 100%;
+    padding-bottom: 3vh;
 }
 
 /* text based intro */
 #intro {
     width: 80%;
-    font-size: 6vmin;
+    font-size: 2.4vh;
 }
 
 #hello {
@@ -32,17 +33,16 @@
 #hello span::before {
   content: '';
   display: inline-block;
-  height: 0.7vmin;
-  width: 8vmin;
-  margin-right: 1.5vmin;
-  border-radius: 4vmin;
+  height: 0.2vh;
+  width: 4vh;
+  margin-right: 0.5vh;
+  border-radius: 4vh;
   background-color: var(--second-col);
   vertical-align: middle;
 }
 
 #highLight {
     font-weight: 900;
-    margin-top: 2vmin;
     font-size: 1.2em;
 }
 
@@ -59,7 +59,8 @@
 
 #shortIntro {
     font-size: 0.7em;
-    margin-top: 2vmin;
+    margin-top: 1vh;
+    line-height: 2.5vh;
 }
 
 #social {
@@ -75,8 +76,8 @@
     color: none;
     text-decoration: none;
     color: var(--second-col);
-    padding: 1vmin;
-    margin: 1vmin;
+    padding: 1vh;
+    margin: 0.3vh;
     font-size: 1.5em;
 }
 
@@ -90,9 +91,10 @@
     color: none;
     text-decoration: none;
     color: var(--prime-col);
-    padding: 0.3em 1em 0.3em 1em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
     background-color: var(--second-col);
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-transform: capitalize;
     border-radius: 2em;
+    font-weight: 600;
 }

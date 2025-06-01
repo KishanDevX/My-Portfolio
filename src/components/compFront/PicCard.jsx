@@ -3,7 +3,14 @@ import React from 'react'
 const PicCard = () => {
   return (
     <div id='pic'>
-      <img src="src/assets/images/codeBoy.webp"/>
+      <lottie-player
+          id="codeAnim"
+          src="public/animations/codingAnimation.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay>
+      </lottie-player>
     </div>
   )
 }

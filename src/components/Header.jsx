@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
   return (
     <header>
-        <div id="logo">
+        <div id="logo" className="animate__animated animate__fadeInLeft">
             <div id="title">Kishan<span>Dev</span>X</div>
         </div>
         <nav>
