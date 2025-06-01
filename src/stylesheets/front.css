@@ -98,3 +98,125 @@
     border-radius: 2em;
     font-weight: 600;
 }
+
+
+/* responsive management */
+@media (min-width: 430px) {
+    #pic {
+        height: 40vh;
+        width: 40vh;
+    }
+}
+
+@media (min-width: 570px) {
+    #shortIntro {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 880px) {
+    #frontSec {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    #pic {
+        height: 45vh;
+        width: 45vh;
+    }
+
+    #intro {
+        width: 50%;
+    }
+
+    #shortIntro {
+        font-size: 0.9em;
+        line-height: 1.3em;
+    }
+
+    #highLight {
+        font-weight: 900;
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 1000px) {
+    #pic {
+        height: 50vh;
+        width: 50vh;
+    }
+
+    #shortIntro {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    #highLight {
+        font-weight: 900;
+        font-size: 1.5em;
+    }
+
+}
+
+@media (min-width: 1170px) {
+    #pic {
+        height: 60vh;
+        width: 60vh;
+    }
+
+    #shortIntro {
+        font-size: 1.3em;
+        line-height: 1.3em;
+    }
+
+    #highLight {
+        font-weight: 900;
+        font-size: 1.8em;
+    }
+}
+
+@media (min-width: 875px) and (min-height: 1000px) {
+    header {
+        height: 8rem;
+    }
+    
+    nav {
+        font-size: 3rem;
+    }
+
+    #logo {
+        font-size: 5rem;
+    }
+
+    #contactBtn {
+        font-size: 0.8em
+    }
+
+
+    #pic {
+        height: 40vh;
+        width: 40vh;
+    }
+
+    #intro {
+        width: 90%;
+    }
+
+    #shortIntro {
+        font-size: 1em;
+        line-height: 1.3em;
+    }
+
+    #highLight {
+        font-weight: 900;
+        font-size: 1.8em;
+    }
+
+    #frontSec {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

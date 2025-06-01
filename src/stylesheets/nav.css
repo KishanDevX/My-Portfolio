@@ -64,7 +64,7 @@ nav ul li a {
 
 #hamIcon .hidden {
   opacity: 0;
-  transform: rotate(-90deg) scale(-0.5);
+  transform: rotate(-20deg) scale(-0.5);
   pointer-events: none;
 }
 
@@ -72,45 +72,6 @@ nav ul li a {
   opacity: 1;
   transform: rotate(0deg) scale(1);
 }
-
-@media (max-width:750px) {
-  #navOptions {
-    display: none;
-  }
-
-  #logo {
-    font-size: 3rem;
-  }
-
-  nav ul li {
-    margin: 0 0 0 0.5rem;
-  }
-
-  #hamIcon {
-    display: flex;
-    margin-left: 2rem;
-  }
-}
-
-@media (max-width:450px) {
-  header {
-    padding-top: 0.5rem;
-    height: auto;
-  }
-
-  #logo {
-    font-size: 3rem;
-  }
-
-  #contactBtn {
-    display: none;
-  }
-
-  #hamIcon {
-    font-size: 2.5rem;
-  }
-}
-
 
 /* drop menu design */
 #dropMenu {
@@ -153,4 +114,52 @@ nav ul li a {
 #dropMenu ul li a i {
   margin-right: 1rem;
 }
+
+
+/* responsive management */
+@media (max-width:750px) {
+  #navOptions {
+    display: none;
+  }
+
+  #logo {
+    font-size: 3rem;
+  }
+
+  nav ul li {
+    margin: 0 0 0 0.5rem;
+  }
+
+  #hamIcon {
+    display: flex;
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width:450px) {
+  header {
+    padding-top: 0.5rem;
+    height: auto;
+  }
+
+  #logo {
+    font-size: 3rem;
+  }
+
+  #contactBtn {
+    display: none;
+  }
+
+  #hamIcon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 450px) {
+  #dropMenu {
+    top: 65px;
+  }
+}
+
+
 
