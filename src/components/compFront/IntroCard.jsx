@@ -2,7 +2,7 @@ import React from 'react'
 
 const IntroCard = () => {
   return (
-    <div id="intro">
+    <div id="intro" className="animate__animated animate__fadeInUp">
         <div id="hello">
             <span>Hello</span>
         </div>
@@ -23,9 +23,9 @@ const IntroCard = () => {
         </div>
         <div id="social">
             <ul>
-                <li><a href=""><i className="ri-github-fill"></i></a></li>
-                <li><a href=""><i className="ri-linkedin-box-fill"></i></a></li>
-                <li><a href=""><i className="ri-twitter-x-line"></i></a></li>
+                <li><a href="https://github.com/KishanDevX"><i className="ri-github-fill"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/kishan-kumar-7057a831a/"><i className="ri-linkedin-box-fill"></i></a></li>
+                <li><a href="https://x.com/KishanDevX"><i className="ri-twitter-x-line"></i></a></li>
             </ul>
         </div>
         <div id="reachBtn">

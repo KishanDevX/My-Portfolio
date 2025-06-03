@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ToggleTheme from './ToggleTheme';
 
-const NavPoints = ({includeIcon, onClose}) => {
+const NavPoints = ({includeIcon, onClose }) => {
+
+
   const homeIcon = <i className="ri-home-4-line"></i>;
   const aboutIcon = <i className="ri-user-received-2-line"></i>;
   const projectIcon = <i className="ri-folder-3-line"></i>;
@@ -12,6 +15,9 @@ const NavPoints = ({includeIcon, onClose}) => {
         <li><a href="#aboutSec">{includeIcon && aboutIcon}about</a></li>
         <li><a href="#projectSec">{includeIcon && projectIcon}projects</a></li>
         <li><a href="#serviceSec">{includeIcon && serviceIcon}services</a></li>
+        <li>
+          <ToggleTheme />
+        </li>
     </ul>
   )
 }

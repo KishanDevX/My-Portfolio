@@ -107,6 +107,20 @@ nav ul li a {
   transition: background-color 0.2s ease;
 }
 
+#dropMenu ul li button {
+  all: unset;
+  color: var(--prime-col);
+  display: block;
+  padding: 1.3vh 3.5vh 1.3vh 2.5vh;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+#dropMenu ul li button i {
+  margin-right: 1rem;
+}
+
 #dropMenu ul li a:active {
   background-color: var(--shade-col);
 }

@@ -5,6 +5,7 @@ const PicCard = () => {
     <div id='pic'>
       <lottie-player
           id="codeAnim"
+          className="animate__animated animate__fadeInUp"
           src="public/animations/codingAnimation.json"
           background="transparent"
           speed="1"
