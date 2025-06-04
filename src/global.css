@@ -3,6 +3,7 @@
     --second-col: #7450E9;
     --third-col: #0B0D11;
     --shade-col: #282828;
+    --highLight: #D1D5DB;
 }
 
 .dark-theme {
@@ -10,6 +11,7 @@
     --second-col: #7450E9;
     --third-col: #FFFFFF;
     --shade-col: #DFE3E3;
+    --highLight: #6B7280;
 }
 
 * {
@@ -34,9 +36,9 @@ section {
     height: 100vh;
     height: 100dvh;
     width: 100%;
-    padding-top: 10vmin;
+    padding-top: 10vh;
     background-color: var(--prime-col);
     color: var(--third-col);
-    border-bottom: 2px solid var(--third-col);
+    /* border-bottom: 2px solid var(--third-col); */
 }
 

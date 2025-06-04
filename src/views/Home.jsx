@@ -9,6 +9,7 @@ import AboutSec from './sections/AboutSec'
 import ProjectSec from './sections/ProjectSec'
 import ServiceSec from './sections/ServiceSec'
 import ContactSec from './sections/ContactSec'
+import Footer from '../components/common/Footer'
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         <ServiceSec />
         <ContactSec />
       </main>
+      <Footer />
     </>
   )
 }

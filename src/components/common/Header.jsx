@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react';
 import NavPoints from './NavPoints'
 import DropMenu from './DropMenu'
-import ToggleTheme from './ToggleTheme'
 
 const Header = () => {
   

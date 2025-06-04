@@ -7,13 +7,17 @@ header {
   width: 100vw;
   height: 60px;
   padding: 0 1.5rem;
-  z-index: 10;
+  z-index: 100;
 }
 
 #logo {
   color: var(--second-col);
   font-size: 3rem;
   margin-left: 0;
+}
+
+#logo span {
+  font-weight: 900;
 }
 
 nav {
@@ -174,6 +178,21 @@ nav ul li a {
     top: 65px;
   }
 }
+
+#toggleTheme {
+  all: unset;
+  background-color: var(--second-col);
+  color: var(--prime-col);
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  /* display: none; */
+}
+
 
 
 

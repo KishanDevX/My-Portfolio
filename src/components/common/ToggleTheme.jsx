@@ -1,14 +1,23 @@
 import React, { useEffect, useState } from 'react';
 
 const ToggleTheme = () => {
-
   const [isDarkTheme, setIsDarkTheme] = useState(() => {
-    return document.body.classList.contains('dark-theme');
+    const savedTheme = localStorage.getItem('isDarkTheme');
+    return savedTheme !== null
+      ? JSON.parse(savedTheme)
+      : document.body.classList.contains('dark-theme');
   });
 
   const toggleTheme = () => {
-    setIsDarkTheme(prev => !prev);
-    document.body.classList.toggle('dark-theme');
+    setIsDarkTheme(prev => {
+      const newTheme = !prev;
+      localStorage.setItem('isDarkTheme', JSON.stringify(newTheme));
+      return newTheme;
+    });
+
+    setTimeout(() => {
+      window.location.reload();
+    }, 50);
   };
 
   const light = <><i className="ri-sun-line"></i>theme</>;

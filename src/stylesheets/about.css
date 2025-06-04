@@ -1,0 +1,114 @@
+#aboutSec {
+    border-bottom: 2px solid white;
+    display: flex;
+    height: 150vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aboutSec h2 {
+    all: unset;
+    margin-left: 2rem;
+    font-size: 3rem;
+    color: var(--third-col);
+    position: relative;
+    margin-top: 2rem;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+#aboutSec h2:after {
+    content: '';
+    height: 0.4rem;
+    width: 5rem;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    border-radius: 10rem;
+    background-color: var(--second-col);
+}
+
+#para {
+    margin-top: 2rem;
+    /* background-color: red; */
+    width: 90%;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: var(--shade-col);
+}
+
+#para p {
+    margin-bottom: 2rem;
+}
+
+#skillOverview {
+    /* background-color: yellow; */
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#frontend, #backend {
+    background-color: var(--highLight);
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    position: relative;
+}
+
+#frontend h3, #backend h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    color: var(--shade-col);
+}
+
+.bar {
+    height: 11rem;
+    width: 11rem;
+    border-radius: 50%;
+    /* margin: 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1a1a1a;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 10;
+    font-weight: 900;
+}
+
+#frontBar {
+    background: conic-gradient(
+    var(--second-col) 0% 78%,     /* Orange for 75% */
+    #e0e0e0 78% 100%     /* Grey for remaining 25% */
+  );
+}
+
+#backBar {
+    background: conic-gradient(
+    var(--second-col) 0% 25%,     /* Green for 30% */
+    #e0e0e0 25% 100%     /* Grey for remaining 70% */
+  );
+}
+
+.inside {
+    height: 9rem;
+    width: 9rem;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 1px 0 5px var(--shade-col);
+}
+
+.text p {
+    color: var(--shade-col);
+    font-size: 1.3rem;
+}
+
