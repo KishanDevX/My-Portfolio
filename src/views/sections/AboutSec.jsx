@@ -1,44 +1,28 @@
 import React from 'react'
 
 import '../../stylesheets/about.css'
+import BioCard from '../../components/compAbout/BioCard'
+import StatusCard from '../../components/compAbout/StatusCard'
+import FrontStack from '../../components/compAbout/FrontStack'
+import BackStack from '../../components/compAbout/BackStack'
+import { ToolStack } from '../../components/compAbout/ToolStack'
 
 const AboutSec = () => {
   return (
     <section id='aboutSec'>
-        <h2>About Me</h2>
-        <div id="para">
+        <BioCard />
+        <StatusCard />
+        <div id="techStack">
+          <h2>
+            <span>What I Use</span>
+          </h2>
           <p>
-            I'm a 16-year-old developer focused on building clean, 
-            responsive, and user-friendly frontend interfaces using HTML, 
-            CSS, JavaScript, and React. I turn ideas into functional, 
-            visually appealing websites that perform smoothly across all devices.            
+            Here are the technologies I currently 
+            work with while building frontend and backend projects.
           </p>
-          <p>
-            While I currently specialize in frontend development, 
-            I'm actively learning backend technologies to expand my skills toward full-stack development in the future. 
-            If you're looking for a reliable 
-            developer to bring your website or web app to life, I'm ready to help.
-          </p>
-        </div>
-        <div id="skillOverview">
-          <div id="frontend">
-            <div className="bar" id='frontBar'>
-              <div className="inside">78%</div>
-            </div>
-            <div className="text">
-              <h3>Frontend</h3>
-              <p>Experienced in frontend development and ready to deliver clean, responsive websites for your project.</p>
-            </div>
-          </div>
-          <div id="backend">
-            <div className="bar" id='backBar'>
-              <div className="inside">25%</div>
-            </div>
-            <div className="text">
-              <h3>Backend</h3>
-              <p>Currently learning backend development to offer complete full-stack solutions soon.</p>
-            </div>
-          </div>
+          <FrontStack />
+          <BackStack />
+          <ToolStack />
         </div>
     </section>
   )

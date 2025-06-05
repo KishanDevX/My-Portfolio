@@ -1,12 +1,12 @@
 #aboutSec {
     border-bottom: 2px solid white;
     display: flex;
-    height: 150vh;
+    height: auto;
     flex-direction: column;
     align-items: center;
 }
 
-#aboutSec h2 {
+#bioTitle {
     all: unset;
     margin-left: 2rem;
     font-size: 3rem;
@@ -17,7 +17,7 @@
     align-self: flex-start;
 }
 
-#aboutSec h2:after {
+#bioTitle:after {
     content: '';
     height: 0.4rem;
     width: 5rem;
@@ -28,7 +28,7 @@
     background-color: var(--second-col);
 }
 
-#para {
+#bioPara {
     margin-top: 2rem;
     /* background-color: red; */
     width: 90%;
@@ -37,7 +37,7 @@
     color: var(--shade-col);
 }
 
-#para p {
+#bioPara p {
     margin-bottom: 2rem;
 }
 
@@ -53,7 +53,6 @@
     display: flex;
     flex-direction: column;
     width: 45%;
-    justify-content: center;
     align-items: center;
     padding: 2rem;
     border-radius: 1.5rem;
@@ -84,15 +83,15 @@
 
 #frontBar {
     background: conic-gradient(
-    var(--second-col) 0% 78%,     /* Orange for 75% */
-    #e0e0e0 78% 100%     /* Grey for remaining 25% */
+    var(--second-col) 0% 78%,   
+    #e0e0e0 78% 100%     
   );
 }
 
 #backBar {
     background: conic-gradient(
-    var(--second-col) 0% 25%,     /* Green for 30% */
-    #e0e0e0 25% 100%     /* Grey for remaining 70% */
+    var(--second-col) 0% 25%,   
+    #e0e0e0 25% 100%    
   );
 }
 
@@ -112,3 +111,88 @@
     font-size: 1.3rem;
 }
 
+#techStack {
+    margin-top: 8rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#techStack p {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 70%;
+    margin-bottom: 2rem;
+}
+
+#techStack h2 {
+    /* background-color: pink; */
+    margin: 2rem;
+    font-size: 2.3rem;
+    font-weight: 400;
+    text-align: center;
+    /* display: block; */
+    position: relative;
+    /* background-color: red; */
+}
+
+#techStack h2 span {
+    position: relative;
+}
+
+#techStack h2 span:after {
+    content: '';
+    height: 0.4rem;
+    width: 5rem;
+    position: absolute;
+    right: 3rem;
+    bottom: -5px;
+    border-radius: 10rem;
+    background-color: var(--second-col);
+}
+
+.stackBox ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stackBox ul li {
+    height: 8rem;
+    width: 8rem;
+    background-color: var(--highLight);
+    margin: 1rem;
+    flex-shrink: 0;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stackBox ul li img {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+#frontStack, #backStack {
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+
+#backStack {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#backStack ul {
+    justify-content: end;
+}
+
+#frontStack h2, #backStack h2 {
+    all: unset;
+    font-size: 2rem;
+    color: var(--second-col);
+    font-weight: 600;
+}

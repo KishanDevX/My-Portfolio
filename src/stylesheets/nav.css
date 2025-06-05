@@ -85,6 +85,7 @@ nav ul li a {
   right: 2rem;
   top: 40px;
   overflow: hidden;
+  box-shadow: -1px 1px 20px 1px var(--prime-col);
 }
 
 #dropMenu ul {
