@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ToggleTheme from './ToggleTheme';
 
 const NavPoints = ({includeIcon, onClose }) => {

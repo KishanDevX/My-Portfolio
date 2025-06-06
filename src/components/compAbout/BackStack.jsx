@@ -12,7 +12,7 @@ const BackStack = () => {
   ]
 
   return (
-    <div id="backStack">
+    <div id="backStack" data-aos="fade-left" data-aos-duration="1000">
         <h2>For backend</h2>
         <ToolsList tools={techSet} />
     </div>

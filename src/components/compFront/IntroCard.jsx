@@ -29,7 +29,7 @@ const IntroCard = () => {
             </ul>
         </div>
         <div id="reachBtn">
-            <a href="">reach out</a>
+            <a href="#contactSec">reach out</a>
         </div>
     </div>
   )

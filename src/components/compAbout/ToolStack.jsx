@@ -12,7 +12,7 @@ export const ToolStack = () => {
   ]
 
   return (
-    <div id="frontStack">
+    <div id="frontStack" data-aos="fade-right" data-aos-duration="1000">
         <h2>Tools</h2>
         <ToolsList tools={techSet} />
     </div>

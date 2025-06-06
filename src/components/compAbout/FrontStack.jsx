@@ -12,7 +12,7 @@ const FrontStack = () => {
   ]
   
   return (
-    <div id="frontStack">
+    <div id="frontStack" data-aos="fade-right" data-aos-duration="1000">
         <h2>For frontend</h2>
         <ToolsList tools={techSet} />
     </div>
